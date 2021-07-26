@@ -1,0 +1,170 @@
+slots:
+  location:
+    type: text
+  info:
+    type: text
+  keywords:
+    type: text
+  data:
+    type: text
+
+
+intents:
+ - greet
+ - weather
+ - goodbye
+ - inform
+ - youtube
+ - browser
+ - wikipedia
+ - software
+ - video
+ - music
+ - greet_reply
+ - data
+ - ask_name
+ - ask_purpose
+ - repeat
+ - video_controls
+
+entities:
+ - location
+ - info
+ - keywords
+
+templates:
+  utter_greet:
+   - 'Hii. How can I help?'
+   - 'Hey there.'
+   - 'Hellow.'
+   - 'Hola.'
+   - 'Hi there.'
+  utter_goodbye:
+   - 'Bye'
+   - 'See ya.'
+   - 'See ya later.'
+   - 'Later'
+   - 'Bye bye.'
+   - 'Good bye.'
+  utter_greet_reply:
+   - 'I am fine. Thanks for asking.'
+   - 'I am good.'
+   - 'I feel awesome today.'
+   - 'I am feeling awesome today. Tell me how can I make you feel the same?'
+   - 'I feel okay.'
+   - 'Meh. Tell me how can I be of service.'
+  utter_ask_keywords:
+   - 'Okay. I dont think I get what you want.'
+   - 'What exactly am I looking for'
+   - 'I think I got what you want but I seem to have missed out on the keywords.'
+   - 'Sorry. I missed out on you.'
+   - 'Okay. What am I looking for exactly?'
+   - 'Do you mind repeating yourself? I seem to have missed out.'
+   - 'Could you please repeat what you said? I promise to pay attention this time.'
+   - 'What should I look for?'
+   - 'I think I get your intentions. I just do not understand on what.'
+   - 'Okay what?'
+  utter_weather_ask:
+   - 'Okay. Tell me the place name again.'
+   - 'Where are you situated?'
+   - 'I could not catch the place name.'
+   - 'Tell me the location name again.'
+  utter_ask_name:
+   - 'My name is Lara. Or so my maker calls me.'
+   - 'Hi, I am Lara.'
+   - 'Hello, you can call me Lara.'
+   - 'Lara. I dont know why my maker named me so.'
+   - 'You can call me Lara.'
+  utter_ask_purpose:
+   - 'Hello. I am Lara. I am an artificial intelligence. I am designed to be your personal assistant.'
+   - 'I can open files for you, play videos from youtube, show you movies on the device provided I know where they are, and also tell you the time and date in case you are too illitrate or lazy to read a watch.'
+   - 'I am an Artificial Intelligence created for general purpose work like playing videos, movies, youtube, wikipedia, google search, tell weather, tell time, launch applications and so on'
+   - 'My capabilities include general purpose work like playing videos, movies, youtube, wikipedia, google search, tell weather, tell time, launch applications and so on. You can teach me new things as well. '
+  utter_software_ask:
+   - 'What do you want me to run?'
+   - 'Sorry. Didnt catch you there. What do you want to execute?'
+   - 'I am really sorry. I wasnt paying attention.'
+   - 'Which one is it again?'
+  utter_wikipedia_ask:
+   - 'What do you want to know about?'
+   - 'What do you want me to tell you about?'
+   - 'I get that you want to know about something. Repeat it for me.'
+   - 'What is it that you wanna know about?'
+  utter_youtube_ask:
+   - 'You want to look for videos on youtube? I didnt catch what you said.'
+   - 'You need to give me something I can search on youtube.'
+   - 'You want me to play you something from youtube? Well you have to mention what you wanna listen so I can look for them.'
+   - 'Come again? What do you want me to play from youtube?'
+  utter_browser_ask:
+   - 'I cannot google search nothing. You need to give me something to work with.'
+   - 'What do you wanna search about?'
+   - 'What is it? Didnt catch you.'
+   - 'I hope you are not trying to browse something illegal.'
+   - 'Repeat it again for me will you.'
+   - 'You need to give me something to google.'
+  utter_video_ask:
+   - 'What do you want me to play from your local machine?'
+   - 'Which one is it?'
+   - 'I think I wasnt listening. Will you repeat yourself?'
+   - 'Which video?'
+   - 'Which movie?'
+  utter_music_ask:
+   - 'Is the song you asked for even there in the system?'
+   - 'I cant find your media file.'
+   - 'I am not able to find your song.'
+   - 'Sorry. I cannot play you nothing,'
+   - 'You gotta give me something to work with. Which song was it again?'
+  utter_inform_ask:
+   - 'Sorry what do you wanna know about?'
+   - 'I wasnt paying attention. What was that again?'
+   - 'Only if I could understand what you want, I could help you.'
+   - 'Okay what?'
+  utter_repeat_ask:
+   - 'Sorry. What do you want me to say again.'
+   - 'Didnt catch you there. Repeat it please?'
+   - 'Sorry. Couldnt catch you there. Please repeat?'
+   - 'Okay what?'
+   - 'What do you want me to say again?'
+  utter_video_controls:
+   - 'Is there a video running?'
+   - 'What? I dont see any video'
+   - 'Well, there should be a video playing to perform this operation'
+   - 'I dont see any video to use this command on.'
+   - 'Why are you saying this?'
+   - 'There is no point. There is no video running'
+   - 'There is no media running.'
+  utter_video_controls_ask:
+   - 'Is there a video running?'
+   - 'What? I dont see any video'
+   - 'Well, there should be a video playing to perform this operation'
+   - 'I dont see any video to use this command on.'
+   - 'Why are you saying this?'
+   - 'There is no point. There is no video running'
+   - 'There is no media running.'
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_greet_reply
+ - utter_ask_keywords
+ - utter_weather_ask
+ - utter_software_ask
+ - utter_wikipedia_ask
+ - utter_youtube_ask
+ - utter_browser_ask
+ - utter_video_ask
+ - utter_music_ask
+ - utter_inform_ask
+ - action_weather
+ - action_software
+ - action_wikipedia
+ - action_youtube
+ - action_browser
+ - action_video
+ - action_music
+ - action_inform
+ - utter_ask_name
+ - utter_ask_purpose
+ - action_repeat
+ - utter_repeat_ask
+ - utter_video_controls
+ - utter_video_controls_ask

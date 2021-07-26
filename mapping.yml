@@ -1,0 +1,90 @@
+youtube:
+   case 1:
+      - ["youtube",{"intent":"keywords"}]
+      - "action_youtube"
+   case 2:
+      - ["youtube"]
+      - "utter_youtube_ask"
+weather:
+   case 1:
+      - ["weather",{"intent":"location"}]
+      - "action_weather"
+   case 2:
+      - ["Weather"]
+      - "utter_weather_ask"
+wikipedia:
+   case 1:
+      - ["wikipedia",{"intent":"keywords"}]
+      - "action_wikipedia"
+   case 2:
+      - ["wikipedia"]
+      - "utter_wikipedia_ask"
+browser:
+   case 1:
+      - ["browser",{"intent":"keywords"}]
+      - "action_browser"
+   case 2:
+      - ["browser"]
+      - "utter_browser_ask"
+software:
+   case 1:
+      - ["software",{"intent":"keywords"}]
+      - "action_software"
+   case 2:
+      - ["software"]
+      - "utter_software_ask"
+video:
+   case 1:
+      - ["video",{"intent":"keywords"}]
+      - "action_video"
+   case 2:
+      - ["video"]
+      - "utter_video_ask"
+music:
+   case 1:
+      - ["music",{"intent":"keywords"}]
+      - "action_music"
+   case 2:
+      - ["music"]
+      - "utter_music_ask"
+inform:
+   case 1:
+      - ["inform",{"intent":"info"}]
+      - "action_inform"
+   case 2:
+      - ["inform"]
+      - "utter_inform_ask"
+ask_purpose:
+   case 1:
+      - ["ask_purpose"]
+      - "utter_ask_purpose"
+ask_name:
+   case 1:
+      - ["ask_name"]
+      - "utter_ask_name"
+greet:
+   case 1:
+      - ["greet"]
+      - "utter_greet"
+greet_reply:
+   case 1:
+      - ["greet_reply"]
+      - "utter_greet_reply"
+goodbye:
+   case 1:
+      - ["goodbye"]
+      - "utter_goodbye"
+repeat:
+   case 1:
+      - ["repeat",{'intent':'keywords'}]
+      - "action_repeat"
+   case 2:
+      - ["repeat"]
+      - utter_repeat_ask
+video_controls:
+   case 1:
+      - ['video_controls',{'intent':'keywords'}]
+      - "utter_video_controls"
+   case 2:
+      - ['video_controls']
+      - "utter_video_controls_ask"
