@@ -1,6 +1,4 @@
 import urllib
-import util
-import datetime
 slot_data={}
 mem_slots=[0,{},{},{},{},{}]
 class tracker:
@@ -35,7 +33,7 @@ class Weather:
             return "Error: System offline. Need Internet connection  for this service."
         
         loc=tracker.get_slot('location')
-        string=util.get_weather(loc)
+        string=loc
 
         return (string)
 
@@ -52,7 +50,7 @@ class wikipedia:
             return "Error: System offline."
         result=''
         key=tracker.get_slot('keywords')
-        result=util.wiki(key)
+        result=key
         return (result)
         
 
@@ -68,7 +66,7 @@ class youtube:
         result=''
         key=tracker.get_slot('keywords')
         try:
-            util.youtube(key)
+            
             result=key
             return "That was, "+result
         except:
@@ -86,7 +84,7 @@ class browser:
             return "Error: System offline."
         result=''
         key=tracker.get_slot('keywords')
-        util.browser(key)
+        
         return 'Initiating google search. Keywords input: '+key
         
 
@@ -99,7 +97,7 @@ class software:
     def run(self):
         result=''
         key=tracker.get_slot('keywords')
-        result=util.executor(key)
+        result=key
         return result
         
 
@@ -112,7 +110,6 @@ class video:
     def run(self):
         
         key=tracker.get_slot('keywords')
-        util.player(key)
         result="Now playing:  "+key
         return result
         
@@ -124,7 +121,7 @@ class music:
 
     def run(self):
         key=tracker.get_slot('keywords')
-        util.player(key)
+        
         result='now playing: '+key
         return result
         
